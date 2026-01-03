@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Jean Dupont</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        🏠 <span>Jean Dupont</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#recommendations">Recommandations</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ABOUT ME -->
+<section id="about">
+    <img src="https://via.placeholder.com/150" alt="Photo de profil">
+    <h1>Jean Dupont</h1>
+    <p>
+        Développeur web junior passionné par la création d’applications modernes
+        en HTML, CSS et JavaScript. Motivé, curieux et toujours prêt à apprendre.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Compétences</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+            <p>HTML5</p>
+        </div>
+        <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
+            <p>CSS3</p>
+        </div>
+        <div class="skill">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
+            <p>JavaScript</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projets</h2>
+    <div class="project">
+        <h3>Application de gestion de tâches</h3>
+        <p>Création d’une application permettant d’ajouter, modifier et supprimer des tâches.</p>
+    </div>
+    <div class="project">
+        <h3>Site vitrine pour PME</h3>
+        <p>Développement d’un site responsive pour une petite entreprise locale.</p>
+    </div>
+    <div class="project">
+        <h3>Portfolio personnel</h3>
+        <p>Création d’un portfolio web mettant en avant mes compétences et projets.</p>
+    </div>
+</section>
+
+<!-- RECOMMENDATIONS -->
+<section id="recommendations">
+    <h2>Recommandations</h2>
+
+    <div id="recommendation-list">
+        <div class="recommendation">“Jean est très motivé et apprend vite.”</div>
+        <div class="recommendation">“Un excellent esprit d’équipe et très sérieux.”</div>
+        <div class="recommendation">“Travail de qualité et respect des délais.”</div>
+    </div>
+
+    <h3>Ajouter une recommandation</h3>
+    <textarea id="rec-text" placeholder="Votre recommandation..."></textarea><br>
+    <button onclick="addRecommendation()">Soumettre</button>
+</section>
+
+<!-- POPUP -->
+<div id="popup">
+    <p>Merci pour votre recommandation !</p>
+    <button onclick="closePopup()">OK</button>
+</div>
+
+</body>
+</html>
